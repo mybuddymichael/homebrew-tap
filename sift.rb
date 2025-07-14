@@ -11,7 +11,7 @@ class Sift < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/mybuddymichael/sift/releases/download/v0.1.1/sift_0.1.1_macOS_intel.tar.gz"
-    sha256 "31b2a01d5ab03672c9739321b325c4fe78d562b38558b878c3e7e3407f48379a"
+    sha256 "9ddad6238e4ae83cc6a69b7e849e84e165c0bf27dbde3aec4721d637b8cdc0e2"
 
     def install
       bin.install "sift"
@@ -19,7 +19,7 @@ class Sift < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/mybuddymichael/sift/releases/download/v0.1.1/sift_0.1.1_macOS_apple_silicon.tar.gz"
-    sha256 "08c0bf4309fed09aa863919a2eb1fed27e7dd9d45454eff8bc13c26e87987c2d"
+    sha256 "05cb9a3ab41c2f736c987a9fb05ad15eda56a24b0a3a9206afac76791bf10e73"
 
     def install
       bin.install "sift"
