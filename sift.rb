@@ -5,21 +5,21 @@
 class Sift < Formula
   desc "A task prioritization tool"
   homepage "https://github.com/mybuddymichael/sift"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/mybuddymichael/sift/releases/download/v0.1.1/sift_0.1.1_macOS_intel.tar.gz"
-    sha256 "9ddad6238e4ae83cc6a69b7e849e84e165c0bf27dbde3aec4721d637b8cdc0e2"
+    url "https://github.com/mybuddymichael/sift/releases/download/v0.1.2/sift_0.1.2_macOS_intel.tar.gz"
+    sha256 "31fc698d8de3da2a93ad18b4a29ea0b01134bc4f066efeef13f950f4a4d049c5"
 
     def install
       bin.install "sift"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/mybuddymichael/sift/releases/download/v0.1.1/sift_0.1.1_macOS_apple_silicon.tar.gz"
-    sha256 "05cb9a3ab41c2f736c987a9fb05ad15eda56a24b0a3a9206afac76791bf10e73"
+    url "https://github.com/mybuddymichael/sift/releases/download/v0.1.2/sift_0.1.2_macOS_apple_silicon.tar.gz"
+    sha256 "97b98193278b465befc112efcebbbcb87130519b87b3a4853f740e3df13ddc26"
 
     def install
       bin.install "sift"
