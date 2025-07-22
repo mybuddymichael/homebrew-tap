@@ -4,9 +4,9 @@
 class SiftThings < Formula
   desc "Terminal-based task prioritization tool for Things.app"
   homepage "https://github.com/mybuddymichael/sift"
-  url "https://github.com/mybuddymichael/sift/archive/v0.2.0.tar.gz"
-  sha256 "44254d483c2de1620029ece478d3a8634b93f316ecef6a8ab54a635b35c8ef3e"
-  version "v0.2.0".delete_prefix("v")
+  url "https://github.com/mybuddymichael/sift/archive/v0.2.1.tar.gz"
+  sha256 "57f568b60fa18b1d4b1707ed051af132c343ce01685ca15a48848ea013e48256"
+  version "v0.2.1".delete_prefix("v")
   license "MIT"
   
   head do
@@ -17,8 +17,8 @@ class SiftThings < Formula
   depends_on :macos
 
   def install
-    system "go", "build", "-trimpath", *std_go_args(ldflags: "-s -w"), "."
-  end
+    system "go", "build", "-trimpath", *std_go_args(output: bin/"sift", ldflags: "-s -w"), "."
+  end          
 
   test do
     # Test that binary exists and is executable
