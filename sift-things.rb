@@ -4,9 +4,9 @@
 class SiftThings < Formula
   desc "Terminal-based task prioritization tool for Things.app"
   homepage "https://github.com/mybuddymichael/sift"
-  url "https://github.com/mybuddymichael/sift/archive/v0.2.1.tar.gz"
-  sha256 "57f568b60fa18b1d4b1707ed051af132c343ce01685ca15a48848ea013e48256"
-  version "v0.2.1".delete_prefix("v")
+  url "https://github.com/mybuddymichael/sift/archive/v0.3.0.tar.gz"
+  sha256 "0147c2ab7d79903a43455133fc9e1106345bd395699e7cd076b6dbb95c72ba39"
+  version "v0.3.0".delete_prefix("v")
   license "MIT"
   
   head do
