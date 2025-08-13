@@ -5,7 +5,7 @@ class Cast < Formula
   desc "A tiny command line utility that converts colors from one format to another"
   homepage "https://github.com/mybuddymichael/cast"
   url "https://github.com/mybuddymichael/cast/archive/v0.1.0.tar.gz"
-  sha256 "3ac6df83201f3b6f8eb0f998dbcac318e5d21d56cccf7f3c8663adf8cff66fb3"
+  sha256 "5e257e0b6d1d2ab8462a42cb6a27c60c273cd01280aa8529b8bf70ea32dcda7c"
   version "v0.1.0".delete_prefix("v")
   license "MIT"
   
