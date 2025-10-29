@@ -4,9 +4,9 @@
 class Amem < Formula
   desc "Command-line tool that gives an LLM agent memory"
   homepage "https://github.com/mybuddymichael/amem"
-  url "https://github.com/mybuddymichael/amem/archive/v0.2.0.tar.gz"
-  sha256 "a1a30a88ccac13757c58cc15cf497f194e839347f21926da3dbf541e4bbe3e85"
-  version "v0.2.0".delete_prefix("v")
+  url "https://github.com/mybuddymichael/amem/archive/v0.3.0.tar.gz"
+  sha256 "ca4ff07ac0a1aa137cb486220dfdd2884f1e948588b8c65ef7eee172b19954d6"
+  version "v0.3.0".delete_prefix("v")
   license "MIT"
 
   head do
@@ -16,7 +16,7 @@ class Amem < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-trimpath", *std_go_args(output: bin/"amem", ldflags: "-s -w -X main.version=v0.2.0"), "."
+    system "go", "build", "-trimpath", *std_go_args(output: bin/"amem", ldflags: "-s -w -X main.version=v0.3.0"), "."
   end
 
   test do
