@@ -4,9 +4,9 @@
 class Mint < Formula
   desc "A (very) simple command line tool to track work on a software project."
   homepage "https://github.com/mybuddymichael/mint"
-  url "https://github.com/mybuddymichael/mint/archive/v0.8.0.tar.gz"
-  sha256 "892702d310ef7e439607d01c8b7fbea618151d22d8cb9d7d9059dfbab7053e8f"
-  version "v0.8.0".delete_prefix("v")
+  url "https://github.com/mybuddymichael/mint/archive/v0.9.0.tar.gz"
+  sha256 "34124a48e573c677b4d0059f6ca42c0b7fee70635d82faefbbbdad4121cbc9b3"
+  version "v0.9.0".delete_prefix("v")
   license "MIT"
 
   head do
@@ -16,7 +16,7 @@ class Mint < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-trimpath", *std_go_args(output: bin/"mint", ldflags: "-s -w -X main.version=v0.8.0"), "."
+    system "go", "build", "-trimpath", *std_go_args(output: bin/"mint", ldflags: "-s -w -X main.version=v0.9.0"), "."
     generate_completions_from_executable(bin/"mint", "completion")
   end
 
